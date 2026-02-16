@@ -4,7 +4,8 @@ import { createWelcomeEmailTemplate } from "./emailTemplate.js"
 export const sendWelcomeEmail = async (email, name, clientURL) => {
     const {data, error} = await resendClient.emails.send({
         from: `${sender.name} <${sender.email}>`,
-        to: email,
+        // to: email, //for prod
+        to: "vinaybibyan925@gmail.com",
         subject: 'Welcome to Chat App',
         html: createWelcomeEmailTemplate(name, clientURL),    
     })
