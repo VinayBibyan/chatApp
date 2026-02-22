@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route
           path="/"
-          element={authUser ? <ChatPage /> : <Navigate to={"/signup"} />}
+          element={authUser ? <ChatPage /> : <Navigate to={"/login"} />}
         />
         <Route
           path="/login"
