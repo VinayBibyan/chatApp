@@ -13,21 +13,21 @@ function ChatPage() {
   useEffect(() => {}, []);
 
   return (
-    <div className="w-full flex items-center justify-center p-4 bg-slate-900">
+    <div className="w-full flex items-center justify-center p-4">
       <div className="relative w-full max-w-6xl">
         <div className="w-full flex flex-col md:flex-row border-b-blue-50 bg-slate-950 border backdrop-blur-xl rounded-3xl">
           {/* LEFT SIDE */}
-          <div className="w-80 bg-slate-800/50 backdrop-blur-sm flex flex-col">
+          <div className="w-80 rounded-3xl backdrop-blur-sm flex flex-col">
             <ProfileHeader />
             <ActiveTabSwitch />
 
-            <div className="flex-1 overflow-y-auto p-4 space-y-2">
+            <div className="flex-1 rounded-3xl overflow-y-auto p-4 space-y-2">
               {activeTab === "chats" ? <ChatsList /> : <ContactList />}
             </div>
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="flex-1 flex flex-col bg-slate-900/50 backdrop-blur-sm">
+          <div className="flex-1 flex flex-col rounded-3xl bg-slate-900/50 backdrop-blur-sm">
             {selectedUser ? <ChatContainer /> : <NoConversationPlaceholder />}
           </div>
         </div>
