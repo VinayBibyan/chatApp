@@ -26,8 +26,8 @@ function ChatContainer() {
     getMessagesByUserId,
     messages,
     isMessagesLoading,
-    // subscribeToMessages,
-    // unsubscribeFromMessages,
+    subscribeToMessages,
+    unsubscribeFromMessages,
   } = useChatStore();
 
   const { authUser } = useAuthStore();
@@ -40,14 +40,14 @@ function ChatContainer() {
     if (!selectedUser?._id) return;
 
     getMessagesByUserId(selectedUser._id);
-    // subscribeToMessages();
+    subscribeToMessages();
 
-    // return () => unsubscribeFromMessages();
+    return () => unsubscribeFromMessages();
   }, [
     selectedUser,
     getMessagesByUserId,
-    // subscribeToMessages,
-    // unsubscribeFromMessages,
+    subscribeToMessages,
+    unsubscribeFromMessages,
   ]);
 
   // Auto scroll to bottom
