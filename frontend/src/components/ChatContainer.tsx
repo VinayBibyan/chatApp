@@ -14,10 +14,11 @@ interface Message {
   createdAt: string;
 }
 
-interface User {
-  _id: string;
-  fullName: string;
-}
+//build fix
+// interface User {
+//   _id: string;
+//   fullName: string;
+// }
 
 function ChatContainer() {
   const {
