@@ -5,7 +5,6 @@ import { arcjetProtection } from "../middleware/arcjet.middleware.js"
 
 const router = express.Router()
 
-router.use(protectRoute)
 router.use(arcjetProtection, protectRoute)
 
 router.get("/contacts", getAllContacts)
