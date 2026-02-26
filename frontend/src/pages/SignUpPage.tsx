@@ -23,19 +23,19 @@ function SignUpPage() {
   };
 
   return (
-    <div className="w-full flex items-center justify-center p-4 bg-slate-900">
+    <div className="w-full flex items-center justify-center p-4">
       <div className="relative w-full max-w-6xl">
-        <div className="w-full flex flex-col md:flex-row border-b-blue-50 bg-slate-950 border backdrop-blur-xl rounded-3xl">
+        <div className="w-full flex flex-col md:flex-row border backdrop-blur-xl rounded-3xl">
           {/* FORM CLOUMN - LEFT SIDE */}
-          <div className="md:w-1/2 p-8 flex items-center justify-center md:border-r border-slate-600/30">
+          <div className="md:w-1/2 p-8 flex items-center justify-center">
             <div className="w-full max-w-md">
               {/* HEADING TEXT */}
               <div className="text-center mb-8">
-                <MessageCircleIcon className="w-12 h-12 mx-auto text-slate-400 mb-4" />
-                <h2 className="text-2xl font-bold text-slate-200 mb-2">
+                <MessageCircleIcon className="w-12 h-12 mx-auto text-[rgb(32,61,104)] mb-4" />
+                <h2 className="text-2xl font-bold text-[rgb(32,61,104)] mb-2">
                   Create Account
                 </h2>
-                <p className="text-slate-400">Sign up for a new account</p>
+                <p className="text-[rgb(32,61,104)]">Sign up for a new account</p>
               </div>
 
               {/* FORM */}
@@ -117,7 +117,7 @@ function SignUpPage() {
           </div>
 
           {/* FORM ILLUSTRATION - RIGHT SIDE */}
-          <div className="hidden md:w-1/2 md:flex items-center justify-center p-6 bg-gradient-to-bl from-slate-800/20 to-transparent">
+          <div className="hidden md:w-1/2 md:flex items-center justify-center p-6">
             <div>
               <img
                 src="/signup.png"
@@ -125,7 +125,7 @@ function SignUpPage() {
                 className="w-full h-auto object-contain"
               />
               <div className="mt-6 text-center">
-                <h3 className="text-xl font-medium text-cyan-400">
+                <h3 className="text-xl font-medium text-[rgb(32,61,104)]">
                   Start Your Journey Today
                 </h3>
 

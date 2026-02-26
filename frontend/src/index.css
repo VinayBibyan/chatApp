@@ -2,27 +2,33 @@
 @plugin "daisyui";
 
 .input {
-  @apply w-full bg-slate-800/50 border border-slate-700 rounded-lg py-2 pl-10 pr-4 text-slate-200 placeholder-slate-400 focus:ring-2 focus:border-transparent;
+  @apply w-full bg-slate-900/50 border  rounded-lg py-2 pl-10 pr-4 text-slate-200 placeholder-slate-400 focus:ring-2 focus:border-transparent;
 }
 
 .auth-input-icon {
-  @apply absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 size-5;
+  @apply absolute left-3 top-1/2 -translate-y-1/2 text-white size-5;
 }
 
 .auth-input-label {
-  @apply block text-sm font-medium text-slate-100 mb-2;
+  /* Changed text-slate-700 to text-slate-900 */
+  @apply block text-sm font-bold text-[rgb(32,61,104)] mb-2;
 }
 
 .auth-badge {
-  @apply inline-flex items-center px-3 py-1 text-xs font-medium rounded-full bg-cyan-500/20 text-cyan-300;
+  /* Using your RGB for the background (with 20% opacity) and text */
+  @apply inline-flex items-center px-3 py-1 text-xs font-medium rounded-full 
+         bg-[rgb(58,106,179,0.2)] text-[rgb(32,61,104)];
 }
 
 .auth-btn {
-  @apply w-full bg-cyan-500 text-white rounded-lg py-2.5 font-medium
-  hover:bg-cyan-600 focus:ring-2 focus:ring-cyan-500;
+  /* Primary button color using your RGB */
+  @apply w-full bg-[rgb(58,106,179)] text-white rounded-lg py-2.5 font-medium
+         hover:opacity-90 focus:ring-2 focus:ring-[rgb(58,106,179)] transition-all;
 }
 
 .auth-link {
-  @apply px-4 py-2 inline-block bg-cyan-500/10 rounded-lg text-cyan-400
-  hover:text-cyan-500 text-sm transition-colors;
+  /* Link styling using your RGB */
+  @apply px-4 py-2 inline-block bg-[rgb(58,106,179,0.2)] rounded-lg 
+         text-[rgb(32,61,104)] hover:bg-[rgb(58,106,179,0.2)] text-sm transition-colors;
 }
+

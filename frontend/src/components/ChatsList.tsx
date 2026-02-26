@@ -20,7 +20,7 @@ function ChatsList() {
       {chats.map((chat: any) => (
         <div
           key={chat._id}
-          className="bg-cyan-500/10 p-4 rounded-lg cursor-pointer hover:bg-cyan-500/20 transition-colors"
+          className="bg-[rgba(0,0,0,0.1)] p-3 rounded-2xl cursor-pointer hover:bg-[rgba(0,0,0,0.25)] text-[rgb(32,61,104)] transition-colors"
           onClick={() => setSelectedUser(chat)}
         >
           <div className="flex items-center gap-3">
@@ -29,7 +29,7 @@ function ChatsList() {
                 <img src={chat.profilePic || "/avatar.png"} alt={chat.fullName} />
               </div>
             </div>
-            <h4 className="text-slate-200 font-medium truncate">{chat.fullName}</h4>
+            <h4 className="font-medium truncate text-[rgb(32,61,104)]">{chat.fullName}</h4>
           </div>
         </div>
       ))}

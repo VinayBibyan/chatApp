@@ -75,8 +75,8 @@ function ChatContainer() {
                 <div
                   className={`chat-bubble relative ${
                     msg.senderId === authUser?._id
-                      ? "bg-cyan-600 text-white"
-                      : "bg-slate-800 text-slate-200"
+                      ? "bg-[rgb(32,61,104)] text-white"
+                      : "bg-[rgb(21,39,67)] text-slate-200"
                   }`}
                 >
                   {msg.image && (
